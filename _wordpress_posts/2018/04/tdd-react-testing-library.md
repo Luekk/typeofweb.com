@@ -251,7 +251,7 @@ A na końcu tego samego testu:
 ```jsx
 await wait(() => expect(queryByText('Ładuję...')).toBeNull());
 
-expet(queryByTestId('joke-text')).toBeTruthy();
+expect(queryByTestId('joke-text')).toBeTruthy();
 ```
 
 Metoda `wait` (importujemy ją tak samo jak `Simulate` i `render`) czeka (domyślnie 4500ms) na callbacka dopóki ten nie przestanie zwracać erroru. Interwał w jakim sprawdzane jest wyrażenie w callbacku to domyślnie 50ms.
